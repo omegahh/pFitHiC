@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 from scipy.special import bdtrc
 from scipy.interpolate import UnivariateSpline
 from sklearn.isotonic import IsotonicRegression
-try:
-    from utils import *
-    from parser import parse_args
-except:
-    from .utils import *
-    from .parser import parse_args
+
+import os, sys
+script_dir = sys.argv[0]
+sys.path.append(os.path.dirname(script_dir))
+from my_utils import *
+from my_parser import parse_args
 
 toKb = 10**3
 toMb = 10**6

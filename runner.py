@@ -3,12 +3,11 @@ import sys
 import time
 import multiprocessing
 from os.path import dirname, basename
-try:
-    from .pfithic import *
-    from .parser import parse_args
-except:
-    from pfithic import *
-    from parser import parse_args
+
+script_dir = sys.argv[0]
+sys.path.append(os.path.dirname(script_dir))
+from pfithic import *
+from my_parser import parse_args
 
 def align_files(reads, frags):
     readsfiles = [f for f in os.listdir(reads) if f.find('count') > 0]
