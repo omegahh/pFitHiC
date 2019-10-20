@@ -1,0 +1,38 @@
+
+
+Interactions file read successfully
+------------------------------------------------------------------------------------
+Observed, Intra-chr in range: pairs= 498383	 totalCount= 6495767
+Observed, Intra-chr all: pairs= 778363	 totalCount= 7054131
+Observed, Inter-chr all: pairs= 0	 totalCount= 0
+Range of observed genomic distances [80000 5000000]
+
+Making equal occupancy bins
+------------------------------------------------------------------------------------
+Observed intra-chr read counts in range	6495767
+Desired number of contacts per bin	129915.34,
+Number of bins	50
+Equal occupancy bins generated
+
+Looping through all possible fragment pairs in-range
+------------------------------------------------------------------------------------
+Chromosome 'chr1',	6232 mappable fragments, 	764894 possible intra-chr fragment pairs in range,	0 possible inter-chr fragment pairs
+Number of all fragments= 6232
+Possible, Intra-chr in range: pairs= 764894 
+Possible, Intra-chr all: pairs= 19422028.0 
+Possible, Inter-chr all: pairs= 0.0 
+Desired genomic distance range   [50000 5000000] 
+Range of possible genomic distances  [80000  249240000] 
+Baseline intrachromosomal probability is 5.148792906693369e-08 
+Interchromosomal probability is 0 
+
+Calculating probability means and standard deviations of contact counts
+------------------------------------------------------------------------------------
+Means and error written to test/fithic_outputs/FitHiC.fithic_pass1.res40000.txt
+
+
+Fitting a univariate spline to the probability means
+------------------------------------------------------------------------------------
+Spline successfully fit
+
+
